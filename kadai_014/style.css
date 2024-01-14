@@ -1,5 +1,6 @@
 body {
   font-family: "Arial", "Meiryo", sans-serif;
+  text-align: center;
 }
 
 .google-fonts {
@@ -11,16 +12,12 @@ body {
   font-size: 20px;
 }
 
-#text-align {
-  text-align: center;
-}
-
 #basic p {
   font-weight: bold;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2em;
   text-shadow: 1px 1px 2px gray;
   letter-spacing: 1.2em;
   border-bottom: solid 3px rgb(115, 115, 114);
@@ -31,8 +28,7 @@ h1 {
 }
 
 .text-pink {
-  color: skyblue;
-  /* 以下はRGBで色を指定しています */
+    /* 以下はRGBで色を指定しています */
   color: rgb(255, 192, 203);
 }
 
