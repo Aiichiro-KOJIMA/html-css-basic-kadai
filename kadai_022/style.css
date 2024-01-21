@@ -1,0 +1,105 @@
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+header h1 {
+  color: rgb(255, 255, 255);
+}
+
+/* main要素全体 */
+main {
+  padding: 10px;
+}
+
+/* id名parentの要素 */
+#parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* class名contentsの要素 */
+.contents {
+  border: 3px solid rgb(238, 204, 204);
+  flex-basis: 25%;
+  padding: 10px 15px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* h2要素 */
+h2 {
+  font-size: 25px;
+  border-bottom: 3px dotted rgb(236, 122, 122);
+  display: block;
+  position: relative;
+}
+
+h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+
+/* class名contents内の二番目のp要素内のテキストの中で一番目の文字 */
+.contents p:nth-of-type(2)::first-letter {
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+
+/* class名contents内のimg要素 */
+.contents img {
+  margin: 10px 0;
+  width: 70%;
+}
+
+footer {
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+  
+  a:visited {
+    color: rgb(193, 234, 251);
+  }
+
+  a:hover {
+    color: rgb(245, 178, 168);
+  }
+
+@media (max-width: 768px) {
+
+  /* h2のフォントサイズを30pxにします。 */
+  h2 {
+    font-size: 30px;
+  }
+
+  /* pのフォントサイズを25pxにします。 */
+  p {
+    font-size: 25px;
+  }
+
+  /* Flexboxコンテナであるid名parent内の要素が縦に並ぶようにします。 */
+  #parent {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
